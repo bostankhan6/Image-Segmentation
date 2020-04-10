@@ -12,12 +12,21 @@ Three architectures have been used for learning purposes:
 
 The implementation and results of each have been provided in their respective Jupyter notebooks in this repository.
 
-The metrics that have been used are Loss, Accuracy, Dice Coefficient and F1-Score. The The best results have been obtained with the **Unet** which are listed below.
-Test Results on Unet:
-* Loss: 0.3436
-* Accuracy: 91.40%
-* Dice Coefficient: 0.7728
-* F1-Score: 0.7889
+The metrics that have been used are Loss, Accuracy, Dice Coefficient and F1-Score:
+
+|          | Modified Unet | DeepLabV3 | Segnet |
+|----------|:-------------:|:---------:|:------:|
+| Loss     |     0.3436    |   0.4292  | 0.6813 |
+| Accuracy |     91.40%    |   90.59%  | 83.26% |
+| Dice     |     0.7728    |   0.7589  | 0.3226 |
+| F1       |     0.7889    |   0.7766  | 0.5792 |
+
+ The The best results have been obtained with the **Modified Unet**
+
+The performance plots for the models are:
+
+Inline-style: 
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/Unet_loss.jpg "Unet Loss")
 
 Actual image size is 1000x1000 but for training purposes patching of 256x256 has been implemented. The settings for Unet that were used are given below:
 * Optimizer = Adam
