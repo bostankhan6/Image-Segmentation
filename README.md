@@ -59,6 +59,8 @@ The settings for Unet that were used are given below:
 * Drop Out = 0.05
 * Batch Size = 16
 
+10% of the training set was used as validation set during training of the network.
+
 Actual image size is 1000x1000 but for training purposes patching of 256x256 has been implemented.
 
 The accuracy of the Unet is slightly greater than DeepLabV3 and it is very light weight compared to DeepLab.
