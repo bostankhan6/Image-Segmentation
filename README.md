@@ -25,14 +25,16 @@ The metrics that have been used are Loss, Accuracy, Dice Coefficient and F1-Scor
 
 The performance plots for the models are:
 
-Inline-style: 
 ###Unet Loss
+
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/Unet_loss.jpg "Unet Loss")
 
 ###Deel Lab V3 Loss:
+
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/deeplab_loss.jpg "Deep Lab V3+ Loss")
 
 ###Segnet Loss:
+
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/segnet_loss.png "Segnet Loss")
 
 
