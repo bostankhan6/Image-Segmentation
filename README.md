@@ -65,7 +65,7 @@ Actual image size is 1000x1000 but for training purposes patching of 256x256 has
 
 The accuracy of the Unet is slightly greater than DeepLabV3 and it is very light weight compared to DeepLab.
 
-The following are the curves for accuracy, dice coefficient and f1-score for the Unet model:
+Following are the curves for accuracy, dice coefficient and f1-score for the Unet model:
 
 ### Unet_Accuracy
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/accuracy.jpg "Unet Accuracy")
