@@ -74,7 +74,7 @@ The following are the curves for accuracy, dice coefficient and f1-score for the
 ### F1_Score
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/f1.jpg "Unet F1 Score")
 
-# Test Set Visual Results with Unet
+## Test Set Results 
 
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/test1.jpg "Test1")
 
