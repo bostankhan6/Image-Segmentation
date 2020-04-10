@@ -25,26 +25,28 @@ The metrics that have been used are Loss, Accuracy, Dice Coefficient and F1-Scor
 
 The performance plots for the models are:
 
-###Unet Loss
+### Unet Loss
 
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/Unet_loss.jpg "Unet Loss")
 
-###Deel Lab V3 Loss:
+### Deel Lab V3 Loss:
 
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/deeplab_loss.jpg "Deep Lab V3+ Loss")
 
-###Segnet Loss:
+### Segnet Loss:
 
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/segnet_loss.png "Segnet Loss")
 
-
-
 **Modified Unet**
-**Improvements Made on the Unet**
-For improving the accuracy of the model, multiple techniques were applied and it was tried to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced.
 
-**Removed a single Convolution Layer from the Conv2D block:** By doing so the network had simplified and it's speed increased.
-**Added an Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: By doing this the performance of the network slight increased.
+**Improvements Made on the Unet**
+For improving the accuracy of the model, multiple techniques were applied in order to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced.
+
+**Removed a single Convolution Layer from the Conv2D block:** By doing so the network has simplified and it's speed has dramatically increased.
+
+**Added a Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: By doing this the performance of the network slight increased.
+
+**Removed the middle dense layer from SE Block that decreases (normally by a ratio of 16) the number of neurons that are input to the final dense layer of SE block for generating excitation values.
 
 The settings for Unet that were used are given below:
 * Optimizer = Adam
@@ -53,11 +55,20 @@ The settings for Unet that were used are given below:
 * Loss = Binary Crossentropy
 * Initial Number of filters for Unet = 16
 * Drop Out = 0.05
-* Batch Size = 1
+* Batch Size = 16
 
 Actual image size is 1000x1000 but for training purposes patching of 256x256 has been implemented.
 
 The accuracy of the Unet is slightly greater than DeepLabV3 and it is very light weight compared to DeepLab.
 
 The following are the curves for accuracy, dice coefficient and f1-score for the Unet model:
+
+### Unet_Accuracy
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/accuracy.jpg "Unet Accuracy")
+
+### Unet Dice_Score
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/dice.jpg "Unet Dice Score")
+
+### F1_Score
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/f1.jpg "Unet F1 Score")
 
