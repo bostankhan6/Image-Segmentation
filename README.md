@@ -26,9 +26,25 @@ The metrics that have been used are Loss, Accuracy, Dice Coefficient and F1-Scor
 The performance plots for the models are:
 
 Inline-style: 
+###Unet Loss
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/Unet_loss.jpg "Unet Loss")
 
-Actual image size is 1000x1000 but for training purposes patching of 256x256 has been implemented. The settings for Unet that were used are given below:
+###Deel Lab V3 Loss:
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/deeplab_loss.jpg "Deep Lab V3+ Loss")
+
+###Segnet Loss:
+![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/segnet_loss.png "Segnet Loss")
+
+
+
+**Modified Unet**
+**Improvements Made on the Unet**
+For improving the accuracy of the model, multiple techniques were applied and it was tried to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced.
+
+**Removed a single Convolution Layer from the Conv2D block:** By doing so the network had simplified and it's speed increased.
+**Added an Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: By doing this the performance of the network slight increased.
+
+The settings for Unet that were used are given below:
 * Optimizer = Adam
 * Initial Learning Rate = 0.001
 * Learning Rate Decay by factor of **0.1** if no improvement is seen
@@ -37,15 +53,9 @@ Actual image size is 1000x1000 but for training purposes patching of 256x256 has
 * Drop Out = 0.05
 * Batch Size = 1
 
-**Improvements Made on the Unet**
-For improving the accuracy of the model, multiple techniques were applied and it was tried to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced.
-
-**Removed a single Convolution Layer from the Conv2D block:** By doing so the network had simplified and it's speed increased.
-**Added an Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: By doing this the performance of the network slight increased.
+Actual image size is 1000x1000 but for training purposes patching of 256x256 has been implemented.
 
 The accuracy of the Unet is slightly greater than DeepLabV3 and it is very light weight compared to DeepLab.
-
-
 
 The following are the curves for accuracy, dice coefficient and f1-score for the Unet model:
 
