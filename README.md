@@ -37,16 +37,18 @@ The performance plots for the models are:
 
 ![alt text](https://github.com/bostankhan6/Image-Segmentation-Unet-DeepLabV3-Segnet/blob/master/plots_and_images/segnet_loss.png "Segnet Loss")
 
-**Modified Unet**
+## Modified Unet
 
-**Improvements Made on the Unet**
+## Improvements Made on the Unet
 For improving the accuracy of the model, multiple techniques were applied in order to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced.
 
-**Removed a single Convolution Layer from the Conv2D block:** By doing so the network has simplified and it's speed has dramatically increased.
+### Removed a single Convolution Layer from the Conv2D block: 
+By doing so the network has simplified and it's speed has dramatically increased.
 
-**Added a Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: By doing this the performance of the network slight increased.
+### Added a Squeeze-and-Excitation block in front of the Convolution layer in Conv2d Block**: 
+By doing this the performance of the network slight increased.
 
-**Removed the middle dense layer from SE Block that decreases (normally by a ratio of 16) the number of neurons that are input to the final dense layer of SE block for generating excitation values.
+### Removed the middle dense layer from SE Block that decreases (normally by a ratio of 16) the number of neurons that are input to the final dense layer of SE block for generating excitation values.
 
 The settings for Unet that were used are given below:
 * Optimizer = Adam
