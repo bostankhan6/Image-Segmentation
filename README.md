@@ -40,7 +40,7 @@ The performance plots for the models are:
 ## Modified Unet
 
 ## Improvements Made on the Unet
-For improving the accuracy of the model, multiple techniques were applied in order to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced (50 Epocs in just **6 minutes!**).
+For improving the accuracy of the model, multiple techniques were applied in order to get good results with good training and inference times. With the following changes the performance slightly increased and the training time significantly reduced (On Google Colab, 50 Epocs in just **6 minutes!**).
 
 ### Removed a single Convolution Layer from the Conv2D block: 
 By doing so the network has simplified and it's speed has dramatically increased.
