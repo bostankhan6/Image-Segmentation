@@ -1,6 +1,6 @@
 # Image-Segmentation-Unet-DeepLabV3-Segnet
 
-Semantic Segmentation models have been trained on the MoNuSeg Dataset comprising of 30 H&E stained tissue trainins Images of 30 patients with tumors of different organs. The dataset also has a subset of 14 images for validation of the models. The images were taken at 40 times magnification. 
+Semantic Segmentation models have been trained on the MoNuSeg Dataset comprising of 30 H&E stained tissue training Images of 30 patients with tumors of different organs. The dataset also has a subset of 14 images for validation of the models. The images were taken at 40 times magnification. 
 
 https://monuseg.grand-challenge.org/Data/
 
